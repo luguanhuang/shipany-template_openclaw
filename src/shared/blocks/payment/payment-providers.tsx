@@ -132,13 +132,15 @@ export function PaymentProviders({
           }}
         >
           {provider.icon_url && (
-            <Image
-              src={provider.icon_url}
-              alt={provider.title || provider.name || ''}
-              width={24}
-              height={24}
-              className="rounded-full"
-            />
+            <span title={provider.title || provider.name || ''}>
+              <Image
+                src={provider.icon_url}
+                alt={provider.title || provider.name || ''}
+                width={24}
+                height={24}
+                className="rounded-full"
+              />
+            </span>
           )}
           <h3>{provider.title}</h3>
           {paymentProvider === provider.name && loading && (

@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "博客",
-    "description": "阅读我们最新的产品功能、解决方案和更新内容。"
+    "title": "OpenClaw Hub 博客 - 教程、指南与资讯",
+    "description": "OpenClaw Hub 博客：最新 OpenClaw 使用指南、技能评测、安全更新和社区教程，助您安全高效使用 OpenClaw。"
   },
   "page": {
-    "title": "ShipAny 博客",
+    "title": "OpenClaw Hub 博客",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "博客",
-        "description": "阅读我们最新的产品功能、解决方案和更新内容。"
+        "title": "OpenClaw Hub 博客",
+        "description": "最新 OpenClaw 使用指南、技能评测、安全更新和社区教程。"
       }
     }
   },

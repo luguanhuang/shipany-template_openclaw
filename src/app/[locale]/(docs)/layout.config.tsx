@@ -10,13 +10,15 @@ export function baseOptions(locale: string): BaseLayoutProps {
     nav: {
       title: (
         <>
-          <Image
-            src={envConfigs.app_logo}
-            alt={envConfigs.app_name}
-            width={28}
-            height={28}
-            className=""
-          />
+          <span title={envConfigs.app_name}>
+            <Image
+              src={envConfigs.app_logo}
+              alt={envConfigs.app_name}
+              width={28}
+              height={28}
+              className=""
+            />
+          </span>
           <span className="text-primary text-lg font-bold">
             {envConfigs.app_name}
           </span>

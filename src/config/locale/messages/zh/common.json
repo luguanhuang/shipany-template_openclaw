@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "OpenClaw Hub - 您值得信赖的 OpenClaw 社区资源站",
+    "description": "OpenClaw Hub 是 OpenClaw 自主 AI 助手的非官方社区资源站。提供带安全评级的精选技能、中英双语指南、实测评测和安全优先的教程，帮助您安全高效使用 OpenClaw。",
+    "keywords": "openclaw, openclaw hub, openclaw教程, openclaw技能, openclaw安全, ai助手, 自主ai, clawhub"
   },
   "sign": {
     "sign_in_title": "登录",

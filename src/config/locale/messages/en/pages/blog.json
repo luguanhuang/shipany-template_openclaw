@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog",
-    "description": "Read latest product features, solutions, and updates."
+    "title": "OpenClaw Hub Blog - Guides, Tutorials & News",
+    "description": "OpenClaw Hub blog: Latest OpenClaw guides, skill reviews, security updates, and community tutorials for OpenClaw users."
   },
   "page": {
-    "title": "ShipAny Blog",
+    "title": "OpenClaw Hub Blog",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "Blog",
-        "description": "Read latest product features, solutions, and updates."
+        "title": "OpenClaw Hub Blog",
+        "description": "Latest OpenClaw guides, skill reviews, security updates, and community tutorials."
       }
     }
   },

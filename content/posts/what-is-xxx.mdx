@@ -1,71 +1,63 @@
 ---
-title: What is YourAppName
-description: YourAppName is an AI SaaS development framework based on NextJS, with built-in rich components and AI SDKs to help you quickly complete AI SaaS project development.
-created_at: 2025-10-24
-author_name: Admin
+title: What is OpenClaw? A Complete Guide to the Autonomous AI Assistant
+description: OpenClaw is an autonomous AI assistant that runs locally on your machine. This guide explains what it does, how it works, and how to get started safely.
+created_at: 2025-03-17
+author_name: OpenClaw Hub
 author_image: /logo.png
 image: /imgs/features/admin.png
 ---
 
-YourAppName is an AI SaaS development framework based on NextJS, with built-in rich components and AI SDKs to help you quickly complete AI SaaS project development.
+OpenClaw is an open-source autonomous AI assistant designed to run locally on your computer. Unlike cloud-based AI tools, it operates directly on your machine — meaning your data stays private and you maintain full control over what it can access.
 
-## Environment Requirements
+## What Makes OpenClaw Different
 
-To ensure you can successfully run and develop YourAppName locally, please install the necessary environment on your computer.
+Most AI assistants work through a cloud API: you send a prompt, the server processes it, and you get a response. OpenClaw takes a different approach. It runs as a local agent that can:
 
-Here are the recommended environment configurations for Mac systems:
+- Read and write files on your system
+- Execute terminal commands
+- Browse the web and interact with external services
+- Install and run community-built **skills** to extend its capabilities
 
-1. Use [fnm](https://github.com/Schniz/fnm) for NodeJS version management
+This makes it genuinely useful for automation tasks — but it also means security matters more than with a typical chatbot.
 
-Recommended versions for NodeJS and npm:
+## How Skills Work
 
-```bash
-$ node -v
-v22.2.0
+Skills are the building blocks of OpenClaw's power. Think of them like browser extensions, but for an AI agent. A skill might let OpenClaw:
 
-$ npm -v
-10.7.0
-```
+- Manage your calendar
+- Summarize emails
+- Monitor a website for changes
+- Run code in a sandboxed environment
 
-2. Use [pnpm](https://pnpm.io/installation) for package management
+Because skills can access your local system, it's important to only install ones that have been reviewed. That's exactly what **OpenClaw Hub** is for — we curate, test, and rate skills so you know what you're getting before you install anything.
 
-Install pnpm globally:
+## Getting Started
 
-```bash
-$ npm install -g pnpm
-```
+To install OpenClaw, visit the official documentation at [openclaw.ai](https://openclaw.ai). The setup process takes about 10 minutes on most systems.
 
-Recommended version for pnpm:
+Once installed, you can:
 
-```bash
-$ pnpm -v
-9.15.0
-```
+1. Open the OpenClaw interface from your terminal
+2. Browse the skill directory at [clawhub.ai](https://clawhub.ai)
+3. Install skills with a single command
+4. Start automating tasks
 
-3. Install [git](https://git-scm.com/downloads) and configure [ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) to ensure you can access your Github repository
+## A Note on Security
 
-```bash
-$ git --version
-git version 2.39.3 (Apple Git-146)
-```
+Because OpenClaw can execute code and access your filesystem, you should treat skill installation the same way you'd treat installing any software. At OpenClaw Hub, we rate every skill from **A** (minimal system access, well-reviewed code) to **D** (broad permissions, use with caution).
 
-> For other operating systems, please search for corresponding environment configuration methods. Before running YourAppName code, please ensure that nodejs and pnpm are installed in your computer environment.
+Before installing any skill, check:
 
-## AI Tools
+- What permissions it requests
+- Whether the source code is publicly available
+- Whether other users have reported issues
 
-To better understand the YourAppName framework and develop projects more efficiently, we recommend using the following AI tools:
+## Who Is OpenClaw For?
 
-| Name                                     | Description            |
-| ---------------------------------------- | ---------------------- |
-| [Cursor](https://www.cursor.com/)        | AI Editor              |
-| [Windsurf](https://codeium.com/windsurf) | AI Editor              |
-| [v0](https://v0.dev/)                    | Generate UI Components |
-| [Claude](https://claude.ai/)             | AI Chat                |
-| [ThinkAny](https://thinkany.ai/)         | AI Search              |
+OpenClaw works well for developers, researchers, and power users who want an AI assistant that can take real action — not just generate text. If you spend time on repetitive tasks involving files, terminals, or web browsing, it's worth exploring.
 
-## AI Editor Plugins
+For casual users, the setup is more involved than a simple web app, but the OpenClaw Hub guides are designed to make it approachable regardless of your technical background.
 
-To better format code and debug interfaces, we recommend installing the following plugins in VS Code / Cursor / Windsurf:
+---
 
-- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) Interface Debugging
-- [Prettier - Code formatter](https://marketplace.cursorapi.com/items?itemName=esbenp.prettier-vscode) Code Formatting
+Have questions? Check our [FAQ](/#faq) or browse the [skill directory](https://clawhub.ai) to see what's possible.

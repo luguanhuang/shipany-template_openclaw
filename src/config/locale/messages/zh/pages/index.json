@@ -2,420 +2,186 @@
   "page": {
     "show_sections": [
       "hero",
-      "logos",
-      "introduce",
       "benefits",
-      "usage",
       "features",
-      "stats",
-      "testimonials",
       "faq",
       "cta"
     ],
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "一小时快速上线你的 AI 创业项目",
-        "highlight_text": "一小时",
-        "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 项目模板。<br/>集成常用功能，快速上线你的产品。",
+        "title": "值得信赖的 OpenClaw 社区中心",
+        "highlight_text": "社区中心",
+        "description": "OpenClaw Hub 是 OpenClaw 自主 AI 助手的非官方社区站点。在这里发现经过安全评级的精选技能、中英双语使用指南和真实测评报告，帮助你安全、高效地上手使用。",
         "announcement": {
-          "badge": "全新",
-          "title": "🎉 ShipAny 模板二已发布",
-          "url": "/pricing"
+          "badge": "社区",
+          "title": "⚠️ 非官方社区站点，与 OpenClaw 官方无关",
+          "url": "https://github.com/openclaw/openclaw"
         },
-        "tip": "🎁 前 1000 名用户特价优惠",
+        "tip": "🛡️ 每个技能上架前均经过安全审查和评级",
         "buttons": [
           {
-            "title": "立即开始",
+            "title": "浏览技能目录",
             "icon": "Zap",
-            "url": "/pricing",
-            "target": "_self",
+            "url": "https://clawhub.ai",
+            "target": "_blank",
             "variant": "default"
           },
           {
-            "title": "阅读文档",
-            "icon": "BookOpenText",
-            "url": "/docs",
+            "title": "OpenClaw 官网",
+            "icon": "ExternalLink",
+            "url": "https://openclaw.ai",
             "target": "_blank",
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ 用户在使用 ShipAny 上站",
+        "show_avatars": false,
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "hero",
+          "src": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=800&fit=crop&auto=format",
+          "alt": "自主 AI 助手界面展示任务自动执行过程",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "hero",
+          "src": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=800&fit=crop&auto=format",
+          "alt": "自主 AI 助手界面展示任务自动执行过程",
           "width": 1200,
           "height": 800
-        },
-        "background_image": {
-          "src": "/imgs/bg/tree.jpg",
-          "alt": "hero"
         }
-      },
-      "logos": {
-        "title": "ShipAny 使用以下技术栈构建",
-        "items": [
-          {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
-          },
-          {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
-          },
-          {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
-          }
-        ]
-      },
-      "introduce": {
-        "block": "features-list",
-        "id": "introduce",
-        "title": "ShipAny 是什么？",
-        "label": "产品简介",
-        "description": "ShipAny 是专为 AI SaaS 创业项目打造的 NextJS 脚手架，包括丰富模板、组件及文档。",
-        "image": {
-          "src": "/imgs/features/landing-page.png",
-          "alt": "introduce"
-        },
-        "items": [
-          {
-            "title": "开箱即用的模板",
-            "description": "从数十款生产级 AI SaaS 模板中选择，快速开启你的项目。",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "introduce"
-            }
-          },
-          {
-            "title": "基础设施搭建",
-            "description": "内置最佳实践，即刻拥有可扩展的基础设施。",
-            "icon": "RiDatabase2Line",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "introduce"
-            }
-          },
-          {
-            "title": "极速部署",
-            "description": "AI SaaS 产品快速上线，助力小时级交付。",
-            "icon": "RiCloudyFill",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "introduce"
-            }
-          },
-          {
-            "title": "AI 集成",
-            "description": "通过内置的 AI SDK，轻松为你的项目集成 AI 能力。",
-            "icon": "RiRobot2Line",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "introduce"
-            }
-          }
-        ],
-        "className": "bg-muted"
       },
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "为何选择 ShipAny",
-        "label": "产品优势",
-        "description": "你获得一切 AI 创业所需——从开箱即用的模板到专业技术支持。",
+        "title": "为什么选择 OpenClaw Hub",
+        "label": "我们的优势",
+        "description": "从精选技能到分步教程，你需要的一切都在这里——安全起步，从容使用。",
         "items": [
           {
-            "title": "全栈解决方案",
-            "description": "基于 Next.js，集成认证、支付、AI，一站式开箱即用。",
-            "icon": "RiNextjsFill",
+            "title": "安全优先的技能评级",
+            "description": "目录中的每个技能上架前均经过安全审查。我们提供清晰的 A–D 风险评级，追踪 CVE 漏洞，并在发现问题时第一时间发布安全提醒。",
+            "icon": "Shield",
             "image": {
-              "src": "/imgs/features/user-billing.png",
-              "alt": "benefits"
+              "src": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=640&h=480&fit=crop&auto=format",
+              "alt": "安全防护屏蔽 AI 系统漏洞"
             }
           },
           {
-            "title": "丰富模板库",
-            "description": "多样的 AI SaaS 模板，点击即用，涵盖聊天、图像生成等多场景。",
-            "icon": "RiClapperboardAiLine",
+            "title": "精选且经过实测的技能",
+            "description": "我们手动筛选高质量技能，进行真实安装测试并收集用户评分——让你找到可靠工具，不再靠猜。",
+            "icon": "CheckCircle2",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "benefits"
+              "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=480&fit=crop&auto=format",
+              "alt": "经过验证的 AI 技能精选列表及评分"
             }
           },
           {
-            "title": "专属技术指导",
-            "description": "享受专属技术支持与开发者社区，为你的成功保驾护航。",
-            "icon": "RiCodeFill",
+            "title": "中英双语支持",
+            "description": "所有指南、教程和技能说明均提供中英双语版本。语言不再是你获取知识的障碍。",
+            "icon": "Languages",
             "image": {
-              "src": "/imgs/features/landing-page.png",
-              "alt": "benefits"
+              "src": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=640&h=480&fit=crop&auto=format",
+              "alt": "支持中英双语的内容资源"
+            }
+          },
+          {
+            "title": "全面的使用指南",
+            "description": "分步操作教程、故障排查数据库和真实行业用例——无论你是刚刚起步还是构建复杂自动化流程，都能找到对应的内容。",
+            "icon": "BookOpen",
+            "image": {
+              "src": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=640&h=480&fit=crop&auto=format",
+              "alt": "AI 助手配置文档与教程"
             }
           }
         ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "三步使用 ShipAny 极速上线",
-        "description": "只需三步，快速开启你的 AI SaaS 创业之路：",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "usage"
-        },
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "获取 ShipAny",
-            "description": "一次性购买 ShipAny，查收邮件获取代码与文档。",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "启动你的项目",
-            "description": "阅读说明文档，克隆 ShipAny 代码，开始开发你的 AI SaaS 项目。",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "个性化定制",
-            "description": "根据需求修改模板内容和数据，配置专属 AI 能力。",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "部署上线",
-            "description": "简单几步将你的项目推向生产环境，立刻为客户提供服务。",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "usage"
-            }
-          }
-        ],
-        "className": "bg-muted"
       },
       "features": {
         "id": "features",
-        "title": "ShipAny 核心功能",
-        "description": "一切你需要的工具，助力 AI SaaS 项目高效上线。",
+        "title": "OpenClaw Hub 提供什么",
+        "description": "由社区维护的完整资源站，帮助你充分发挥自主 AI 助手的潜力。",
         "items": [
           {
-            "title": "Next.js 项目模板",
-            "description": "生产就绪、支持 SEO 与多语言的 Next.js 脚手架。",
-            "icon": "RiNextjsFill"
+            "title": "技能目录",
+            "description": "浏览附带安全评级、用户评价和安装说明的精选技能，由社区持续更新维护。",
+            "icon": "Zap"
           },
           {
-            "title": "身份认证与支付",
-            "description": "集成谷歌 OAuth、一键登录，以及 Stripe 支付。",
-            "icon": "RiKey2Fill"
+            "title": "安全指南",
+            "description": "学习识别高风险技能、配置沙箱环境，以及在本地运行 AI 代理时的安全最佳实践。",
+            "icon": "Shield"
           },
           {
-            "title": "数据基础设施",
-            "description": "内置 Supabase，稳定可靠的数据存储。",
-            "icon": "RiDatabase2Line"
+            "title": "安装教程",
+            "description": "适用于 Windows、Mac 和 Linux 的清晰分步安装指南，包含常见问题排查。",
+            "icon": "Download"
           },
           {
-            "title": "一键部署",
-            "description": "自动化部署到 Vercel 或 Cloudflare，极速上线。",
-            "icon": "RiCloudy2Fill"
+            "title": "渠道集成",
+            "description": "将助手接入 WhatsApp、Telegram、Discord 等通讯平台的配置指南。",
+            "icon": "MessageSquare"
           },
           {
-            "title": "商业分析",
-            "description": "集成 Google Analytics、Search Console，助力业务增长。",
-            "icon": "RiBarChart2Line"
+            "title": "双语内容",
+            "description": "所有指南、教程和社区讨论均提供完整的中英文版本。",
+            "icon": "Globe"
           },
           {
-            "title": "AI 原生基础设施",
-            "description": "预置 AI 集成、积分系统和 API 售卖能力。",
-            "icon": "RiRobot2Line"
-          }
-        ]
-      },
-      "stats": {
-        "id": "stats",
-        "title": "用户喜爱 ShipAny",
-        "description": "因其易用且上线飞快。",
-        "items": [
-          {
-            "title": "999+",
-            "description": "位用户"
-          },
-          {
-            "title": "200+",
-            "description": "组件块"
-          },
-          {
-            "title": "50+",
-            "description": "专业模板"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "用户对 ShipAny 的评价",
-        "description": "听听开发者与创始人用 ShipAny 快速上线 AI 创业项目的故事。",
-        "items": [
-          {
-            "name": "David Chen",
-            "role": "AIWallpaper.shop 创始人",
-            "quote": "ShipAny 为我们节省了数月开发时间。2 天上线 AI 壁纸业务，一周内就收到了第一笔付费订单！",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "david"
-            }
-          },
-          {
-            "name": "Rachel Kim",
-            "role": "HeyBeauty.ai CTO",
-            "quote": "内置 AI 基础设施颠覆了开发体验，无需担心架构，只需专注核心功能，极快落地。",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "rachel"
-            }
-          },
-          {
-            "name": "Marcus Thompson",
-            "role": "独立开发者",
-            "quote": "作为独立开发者，ShipAny 满足了全部需求——认证、支付、AI 集成、美观界面，一个周末上线 SaaS！",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "marcus"
-            }
-          },
-          {
-            "name": "Sofia Garcia",
-            "role": "Melodisco CEO",
-            "quote": "模板高度可定制且生产级。我们几小时内搭建出了 AI 音乐平台，上市周期大大缩短！",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "sofia"
-            }
-          },
-          {
-            "name": "James Wilson",
-            "role": "GPTs.works 技术负责人",
-            "quote": "ShipAny 基础设施极其稳定。我们从 0 到 1 万用户，无需关心后端维护，是最棒的 AI 创业投资。",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "james"
-            }
-          },
-          {
-            "name": "Anna Zhang",
-            "role": "创业者",
-            "quote": "从想法到上线，仅用 3 天！ShipAny 模板和部署工具让我们极快验证 AI 商业创意。",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "anna"
-            }
+            "title": "社区资源",
+            "description": "与其他用户交流、分享使用经验，从已经解决过同类问题的社区成员那里获取帮助。",
+            "icon": "Users"
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "关于 ShipAny 的常见问题",
-        "description": "还有其他问题？欢迎加入 Discord 或发邮件联系我们。",
+        "title": "常见问题",
+        "description": "还有其他问题？欢迎加入我们的社区讨论。",
         "items": [
           {
-            "question": "ShipAny 是什么？怎么帮到我？",
-            "answer": "ShipAny 是专为 AI SaaS 创业设计的 NextJS 全套脚手架，内含开箱即用的模板、基础设施搭建和部署工具，让你数小时内上线 AI 产品。"
+            "question": "什么是 OpenClaw Hub？",
+            "answer": "OpenClaw Hub 是一个非官方社区站点，专注于帮助用户安全、高效地使用 OpenClaw。我们提供经过安全评级的精选技能、中英双语指南和实用教程，内容均由社区共同维护。"
           },
           {
-            "question": "使用 ShipAny 需要很高的技术水平吗？",
-            "answer": "有基础编程知识即可上手。ShipAny 面向开发者友好，详细文档和模板让初学者也能轻松起步，不需深厚 AI 或云计算背景。"
+            "question": "这是 OpenClaw 的官方网站吗？",
+            "answer": "不是。OpenClaw Hub 是社区自发运营的站点，与 OpenClaw 官方项目没有任何关联，也未获其背书。如需官方信息，请访问 openclaw.ai。"
           },
           {
-            "question": "ShipAny 支持哪些类型的 AI SaaS 项目？",
-            "answer": "ShipAny 支持内容生成、数据分析、AI 聊天机器人、图片/内容生成器等多种主流 AI 应用场景。"
+            "question": "你们如何评定技能的安全性？",
+            "answer": "我们会审查每个技能的源代码、权限申请和依赖项，根据对系统资源的访问范围、网络请求行为等维度，将技能评为 A 级（最安全）到 D 级（谨慎使用）。"
           },
           {
-            "question": "用 ShipAny 一般多久能上线？",
-            "answer": "借助 ShipAny，可在数小时内拿到产品原型并上线生产环境，预配置的一键部署大幅缩短开发周期。"
+            "question": "如何安装 OpenClaw？",
+            "answer": "请前往 openclaw.ai 查阅官方安装文档。OpenClaw Hub 提供补充教程和常见问题排查指南，帮助你顺利完成安装。"
           },
           {
-            "question": "ShipAny 的基础设施包括哪些内容？",
-            "answer": "包含认证、数据库、API 集成、支付、云端部署等全栈解决方案，全部遵循业界最佳实践预配置。"
+            "question": "这里列出的技能是官方认证的吗？",
+            "answer": "目录中的技能均由社区开发和维护。虽然我们会对其进行安全审查，但请始终对第三方代码保持谨慎——安装前仔细检查，并尽量在隔离环境中运行。"
           },
           {
-            "question": "模板是否支持定制自己的品牌？",
-            "answer": "当然支持！所有模板均可自定义设计、功能和品牌，既保持基础架构稳定，又能满足个性扩展需求。"
+            "question": "如何为 OpenClaw Hub 做贡献？",
+            "answer": "欢迎参与贡献！你可以提交新技能、完善现有指南、翻译内容或分享使用经验。加入我们的社区讨论，一起建设这个平台。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "发布你的第一个 AI SaaS 项目",
-        "description": "从这里出发，用 ShipAny 极速交付。",
+        "title": "安全开启你的 AI 助手之旅",
+        "description": "探索精选技能、阅读安全指南、加入有温度的社区。OpenClaw Hub 陪你走好每一步。",
         "buttons": [
           {
-            "title": "获取 ShipAny",
-            "url": "https://shipany.ai",
+            "title": "浏览技能目录",
+            "url": "https://clawhub.ai",
             "target": "_blank",
             "icon": "Zap"
           },
           {
-            "title": "阅读文档",
-            "url": "/docs",
+            "title": "OpenClaw 官网",
+            "url": "https://openclaw.ai",
             "target": "_blank",
             "variant": "outline",
-            "icon": "BookOpenText"
+            "icon": "ExternalLink"
           }
         ],
-        "className": "bg-muted"
-      },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "订阅我们的邮件通知",
-        "description": "获取 ShipAny 最新资讯与产品动态。",
-        "submit": {
-          "input": {
-            "placeholder": "输入邮箱"
-          },
-          "button": {
-            "title": "订阅"
-          },
-          "action": "/api/subscribe"
-        },
         "className": "bg-muted"
       }
     }

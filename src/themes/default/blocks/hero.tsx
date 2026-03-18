@@ -116,40 +116,44 @@ export function Hero({
                 className="h-3 w-full bg-[repeating-linear-gradient(-45deg,var(--color-foreground),var(--color-foreground)_1px,transparent_1px,transparent_4px)] opacity-5"
               />
               {section.image_invert?.src && (
-                <Image
-                  className="border-border/25 relative z-2 hidden w-full border dark:block"
-                  src={section.image_invert.src}
-                  alt={section.image_invert.alt || section.image?.alt || ''}
-                  width={
-                    section.image_invert.width || section.image?.width || 1200
-                  }
-                  height={
-                    section.image_invert.height || section.image?.height || 630
-                  }
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  loading="lazy"
-                  fetchPriority="high"
-                  quality={75}
-                  unoptimized={section.image_invert.src.startsWith('http')}
-                />
+                <span title={section.image_invert.title || section.title || ''}>
+                  <Image
+                    className="border-border/25 relative z-2 hidden w-full border dark:block"
+                    src={section.image_invert.src}
+                    alt={section.image_invert.alt || section.image?.alt || ''}
+                    width={
+                      section.image_invert.width || section.image?.width || 1200
+                    }
+                    height={
+                      section.image_invert.height || section.image?.height || 630
+                    }
+                    sizes="(max-width: 768px) 100vw, 1200px"
+                    loading="lazy"
+                    fetchPriority="high"
+                    quality={75}
+                    unoptimized={section.image_invert.src.startsWith('http')}
+                  />
+                </span>
               )}
               {section.image?.src && (
-                <Image
-                  className="border-border/25 relative z-2 block w-full border dark:hidden"
-                  src={section.image.src}
-                  alt={section.image.alt || section.image_invert?.alt || ''}
-                  width={
-                    section.image.width || section.image_invert?.width || 1200
-                  }
-                  height={
-                    section.image.height || section.image_invert?.height || 630
-                  }
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  loading="lazy"
-                  fetchPriority="high"
-                  quality={75}
-                  unoptimized={section.image.src.startsWith('http')}
-                />
+                <span title={section.image.title || section.title || ''}>
+                  <Image
+                    className="border-border/25 relative z-2 block w-full border dark:hidden"
+                    src={section.image.src}
+                    alt={section.image.alt || section.image_invert?.alt || ''}
+                    width={
+                      section.image.width || section.image_invert?.width || 1200
+                    }
+                    height={
+                      section.image.height || section.image_invert?.height || 630
+                    }
+                    sizes="(max-width: 768px) 100vw, 1200px"
+                    loading="lazy"
+                    fetchPriority="high"
+                    quality={75}
+                    unoptimized={section.image.src.startsWith('http')}
+                  />
+                </span>
               )}
             </div>
           </div>
@@ -159,16 +163,18 @@ export function Hero({
       {section.background_image?.src && (
         <div className="absolute inset-0 -z-10 hidden h-full w-full overflow-hidden md:block">
           <div className="from-background/80 via-background/80 to-background absolute inset-0 z-10 bg-gradient-to-b" />
-          <Image
-            src={section.background_image.src}
-            alt={section.background_image.alt || ''}
-            className="object-cover opacity-60 blur-[0px]"
-            fill
-            loading="lazy"
-            sizes="(max-width: 768px) 0vw, 100vw"
-            quality={70}
-            unoptimized={section.background_image.src.startsWith('http')}
-          />
+          <span title={section.background_image.title || ''}>
+            <Image
+              src={section.background_image.src}
+              alt={section.background_image.alt || ''}
+              className="object-cover opacity-60 blur-[0px]"
+              fill
+              loading="lazy"
+              sizes="(max-width: 768px) 0vw, 100vw"
+              quality={70}
+              unoptimized={section.background_image.src.startsWith('http')}
+            />
+          </span>
         </div>
       )}
     </section>

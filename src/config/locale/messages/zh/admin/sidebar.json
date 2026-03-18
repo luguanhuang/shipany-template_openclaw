@@ -1,10 +1,10 @@
 {
   "header": {
     "brand": {
-      "title": "ShipAny Two",
+      "title": "OpenClaw Hub",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny Two"
+        "alt": "OpenClaw Hub"
       },
       "url": "/admin"
     },

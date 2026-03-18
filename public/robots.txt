@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /settings/
+Disallow: /activity/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://openclawhub.run/sitemap.xml

@@ -107,6 +107,7 @@ export function Footer({ footer }: { footer: FooterType }) {
                   {item.icon && (
                     <SmartIcon name={item.icon as string} size={20} />
                   )}
+                  <span className="sr-only">{item.title || 'Social media link'}</span>
                 </Link>
               ))}
             </div>

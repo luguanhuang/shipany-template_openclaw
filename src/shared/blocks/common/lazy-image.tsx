@@ -31,6 +31,7 @@ export function LazyImage({
     <LazyLoadImage
       src={src}
       alt={alt}
+      title={title}
       width={width}
       height={height}
       effect="blur" // 支持 blur、opacity 等
