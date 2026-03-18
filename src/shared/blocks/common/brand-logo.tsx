@@ -11,16 +11,14 @@ export function BrandLogo({ brand }: { brand: BrandType }) {
       className={`flex items-center space-x-3 ${brand.className}`}
     >
       {brand.logo && (
-        <span title={brand.logo.title || brand.title || ''}>
-          <Image
-            src={brand.logo.src}
-            alt={brand.logo.alt || brand.title || ''}
-            width={brand.logo.width || 80}
-            height={brand.logo.height || 80}
-            className="h-8 w-auto rounded-lg"
-            unoptimized={brand.logo.src.startsWith('http')}
-          />
-        </span>
+        <Image
+          src={brand.logo.src}
+          alt={brand.logo.alt || brand.title || ''}
+          width={brand.logo.width || 80}
+          height={brand.logo.height || 80}
+          className="h-8 w-auto rounded-lg"
+          unoptimized={brand.logo.src.startsWith('http')}
+        />
       )}
       {brand.title && (
         <span className="text-lg font-medium">{brand.title}</span>
