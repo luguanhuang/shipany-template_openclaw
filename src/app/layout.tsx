@@ -1,6 +1,7 @@
 import '@/config/style/global.css';
 
 import { JetBrains_Mono, Merriweather, Noto_Sans_Mono } from 'next/font/google';
+import type { Metadata } from 'next';
 import { getLocale, setRequestLocale } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 
@@ -8,6 +9,10 @@ import { envConfigs } from '@/config';
 import { locales } from '@/config/locale';
 import { UtmCapture } from '@/shared/blocks/common/utm-capture';
 import { getAllConfigs } from '@/shared/models/config';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(envConfigs.app_url || 'https://openclawhub.run'),
+};
 import { getAdsService } from '@/shared/services/ads';
 import { getAffiliateService } from '@/shared/services/affiliate';
 import { getAnalyticsService } from '@/shared/services/analytics';
