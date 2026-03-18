@@ -133,7 +133,7 @@ export function Showcases({
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <span title={item.image?.title || item.title || ''}>
+                      <span>
                         <Image
                           src={item.image?.src ?? ''}
                           alt={item.image?.alt ?? ''}
