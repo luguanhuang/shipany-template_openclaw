@@ -7,6 +7,8 @@ import { getLocalPage } from '@/shared/models/post';
 
 export const revalidate = 3600;
 
+const noIndexStaticPages = new Set(['privacy-policy', 'terms-of-service']);
+
 // dynamic page metadata
 export async function generateMetadata({
   params,
@@ -45,12 +47,17 @@ export async function generateMetadata({
   if (staticPage) {
     title = staticPage.title || '';
     description = staticPage.description || '';
+    const noIndex = noIndexStaticPages.has(staticPageSlug);
 
     return {
       title,
       description,
       alternates: {
         canonical: canonicalUrl,
+      },
+      robots: {
+        index: !noIndex,
+        follow: true,
       },
     };
   }
